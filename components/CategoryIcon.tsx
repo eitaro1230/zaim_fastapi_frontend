@@ -88,7 +88,7 @@ const CategoryIcon = ({ category, color }: any) => {
     const selectedCategoryIcon = categoryIconList.find(
       (category) => category.categoryName === categoryName
     );
-    return selectedCategoryIcon!.categoryIcon;
+    return selectedCategoryIcon?.categoryIcon;
   };
 
   return <>{isCategoryIcon(category)}</>;
