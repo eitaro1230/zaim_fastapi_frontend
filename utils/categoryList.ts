@@ -16,7 +16,7 @@ const isCategoryColor = (categoryName: string) => {
   const selectedCategory = categoryList.find(
     (category) => category.categoryName === categoryName
   );
-  return selectedCategory!.categoryColor;
+  return selectedCategory?.categoryColor;
 };
 
 export { categoryList, isCategoryColor };
